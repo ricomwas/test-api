@@ -7,7 +7,7 @@ from security import authenticate, identity
 from resources.user import UserRegister
 from resources.item import Item, ItemList
 from resources.store import Store, StoreList
-from db import db
+# from db import db
 
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'prodigious'
 api = Api(app)
-db.init_app(app)
+# db.init_app(app)
 
 
 jwt = JWT(app, authenticate, identity)
