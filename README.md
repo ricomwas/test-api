@@ -1,4 +1,4 @@
-# Flak REST API
+# Flask REST API
 
 ## Installation 
 
