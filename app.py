@@ -11,7 +11,7 @@ from resources.store import Store, StoreList
 
 
 app = Flask(__name__)
-app.config['POSTGRESQL_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['POSTGRESQL_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 app.config['POSTGRESQL_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'prodigious'
 api = Api(app)
